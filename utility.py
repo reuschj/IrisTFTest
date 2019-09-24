@@ -101,5 +101,5 @@ def evaluate_model(model, training_data):
     print('Correct:', correct_count)
     print('Incorrect:', incorrect_count)
     print('Total:', len(predictions))
-    percent_correct = correct_count / len(predictions)
+    percent_correct = float(correct_count) / float(len(predictions))
     print('Score: %s' % (to_percent_str(percent_correct, places=2)))
